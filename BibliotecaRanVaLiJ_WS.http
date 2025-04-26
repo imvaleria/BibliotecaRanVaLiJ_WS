@@ -1,0 +1,6 @@
+@BibliotecaRanVaLiJ_WS_HostAddress = http://localhost:5121
+
+GET {{BibliotecaRanVaLiJ_WS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "_Layout.cshtml";
+}
+
+<h2>Iniciar sesión</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+}
+
+<form method="post" action="/Auth/Login">
+    <div>
+        <label for="nombre">Nombre de usuario:</label>
+        <input type="text" id="nombre" name="nombre" required />
+    </div>
+    <div>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" required />
+    </div>
+    <div>
+        <button type="submit">Iniciar sesión</button>
+    </div>
+</form>
